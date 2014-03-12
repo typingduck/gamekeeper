@@ -75,7 +75,9 @@ delete = request "DELETE"
 
 request :: Method -> Uri -> IO BL.ByteString
 request method uri = withManager $ \manager -> do
-        body <- fmap responseBody (httpLbs req { method = method } manager)
+        body <- fmap responseBody (httpLbs req { method = method,
+                                                 responseTimeout = Just 300000000 -- 5 minutes
+                                               } manager)
         liftIO $ do
             debug ["[", show method, "] -> ", abspath uri]
             debug [ "["
