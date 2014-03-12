@@ -38,14 +38,14 @@ executable gamekeeper
   build-depends:    base            >= 4 && < 5
                   , ghc-prim
                   , transformers
-                  , http-conduit
+                  , http-conduit <= 1.9.5
                   , http-types
                   , network
                   , network-metrics >= 0.3.2
                   , utf8-string
                   , bytestring
                   , vector
-                  , aeson
+                  , aeson <= 0.6.2.1
                   , cmdargs
                   , time
                   , old-locale
