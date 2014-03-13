@@ -32,7 +32,7 @@ executable gamekeeper
                   , TypeSynonymInstances
                   , FlexibleInstances
 
-  ghc-options:      -Wall -O2 -rtsopts -threaded -optl-static -optl-pthread
+  ghc-options:      -Wall -O2 -rtsopts -threaded 
   ghc-prof-options: -prof -fprof-auto -auto-all -with-rtsopts=-p
 
   build-depends:    base            >= 4 && < 5
