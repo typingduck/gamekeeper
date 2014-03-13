@@ -1,5 +1,5 @@
 name:               gamekeeper
-version:            0.3.2
+version:            0.3.4
 synopsis:           Management and monitoring tools for RabbitMQ
 description:        Retrieve statistics/metrics, perform operations tasks, and manage RabbitMQ via the HTTP API
 license:            OtherLicense
